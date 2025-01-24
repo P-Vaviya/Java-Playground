@@ -21,7 +21,16 @@ class StudentClass{
         s1.marks1 = 70;
         s1.marks2 = 71;
         s1.roll_no = 005;
-        System.out.println("Total marks achieved : " + s1.CalculateTotal());
+        System.out.println("Total marks achieved by : " + s1.name + " is " + s1.CalculateTotal());
         s1.PrintResult();
+        System.out.println();
+
+        Student s2 = new Student(); 
+        s2.name = "Unknown";
+        s2.marks1 = 0;
+        s2.marks2 = 1;
+        s2.roll_no = 001;
+        System.out.println("Total marks achieved : " + s2.name + " is " + s2.CalculateTotal());
+        s2.PrintResult();
     }
 }
